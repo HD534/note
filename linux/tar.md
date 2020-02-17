@@ -1,15 +1,3 @@
-
-
-- 使用命令　`getconf LONG_BIT`
-查看linux是32位还是64位
-如果返回的是32，那么就是32位
-如果返回的是64，那么就是64位
-
-- 在linux环境下，有的地方只支持KSH或sh，在用的时候要做切换
-用# bash 回车---》可以切换到sh环境,做编辑和操作
-用# ksh  回车 ---》可以继续回到ksh环境，做编辑和操作
-
-
 - tar   [tar usage](https://www.tecmint.com/18-tar-command-examples-in-linux/)
 The Linux “tar” stands for tape archive (磁带存档)
 	1.  create tar archive file

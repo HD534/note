@@ -83,6 +83,10 @@ git mv 会将变动添加到暂存区
    
     `git push -u origin feature_branch_name`
 
+    `git push <REMOTE_NAME> <LOCAL_BRANCH_NAME>:<REMOTE_BRANCH_NAME>`
+
+https://tecadmin.net/how-to-create-a-branch-in-remote-git-repository/
+
 ### git merge
 
 
