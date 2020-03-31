@@ -47,8 +47,8 @@ git checkout 'branch name'
 delete branch:  
 git branch -d 'branch name'    
 
-switch branch from remote
-git checkout -b dev remotes/origin/dev
+switch branch from remote  
+`git checkout -b dev remotes/origin/dev`
 
 ### .gitignore
 
@@ -73,7 +73,7 @@ git mv 会将变动添加到暂存区
 
 ### git push
 
- Push a new local branch to a remote Git repository and track it too
+#### Push a new local branch to a remote Git repository and track it too
 
 1. Create a new branch:
    
