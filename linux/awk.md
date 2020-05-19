@@ -1,0 +1,2 @@
+
+cat big5.dat.bak1 | awk -F'~\t' '{print "update db_crn.dbo.customer_details set customer_dtl=\047"$7"\047 where customer_details_id="$1" and primary_alpha_id=\047"$2"\047 and secondary_alpha_id=\047"$3"\047 and dtl_type=\047"$4"\047 and lang=\047"$5"\047 and seq="$6}'
