@@ -1,5 +1,7 @@
 # Jpa call store procedure #
 
+http://roufid.com/3-ways-to-call-a-stored-procedure-with-hibernate-jpa-2-1/
+
 ###第一种 使用 native sql 
 
 ```

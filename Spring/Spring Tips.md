@@ -81,15 +81,17 @@ spring:
 （参考[howto-traditional-deployment](https://docs.spring.io/spring-boot/docs/current/reference/html/howto-traditional-deployment.html) ）
 1. 创建 `war` 包需要 `Application` 继承 `SpringBootServletInitializer` 并实现 `configure` 的方法。
 2. 如果是 maven 项目需要将 pom 文件中的 package 方法改成war `<packaging>war</packaging> `  ，默认是 jar 。
-3. 将内嵌的 `tomcat` 的 `scope` 改成 `provided` ，这样打包的时候会把 `tomcat` 相关的 `jar` 包都放到一个 `lib-provided` 的文件夹下。
-```<dependencies>
-	<!-- … -->
-	<dependency>
-		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-tomcat</artifactId>
-		<scope>provided</scope>
-	</dependency>
-	<!-- … -->
+3. 将内嵌的 `tomcat` 的 `scope` 改成 `provided` ，这样打包的时候会把 `tomcat` 相关的 `jar` 包都放到一个 `lib-provided` 的文件夹下
+
+```
+<dependencies>
+  <!-- … -->
+  <dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-tomcat</artifactId>
+    <scope>provided</scope>
+  </dependency>
+  <!-- … -->
 </dependencies>
 ```
 ---
