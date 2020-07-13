@@ -87,6 +87,10 @@ git mv 会将变动添加到暂存区
 
 https://tecadmin.net/how-to-create-a-branch-in-remote-git-repository/
 
+
+4. push the local branch to remote
+ `git push --set-upstream origin <branch_name>`
+
 ### git merge
 
 
@@ -130,5 +134,19 @@ git push origin master
 ```
 
 
+### git reset
+如果已经 commit， 但是需要 rollback 到前一个 commit
+可以使用
+`git reset <commit id>`
+
+直接回退，不保留已经 commit 的内容
+`git reset --hard <commit id>`
+
+回退，但是保留已经修改的内容，已经修改的内容会保留在暂存区（即已经 `git add` 了）
+`git reset --soft <commit id>`
+
+
+`git push -f origin master` force push
+ 
 
 
