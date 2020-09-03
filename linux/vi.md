@@ -12,3 +12,8 @@ s/users\/asnpifw\/cdctest\/test-sqlfile\/sit-run.sh/#!\/users\/asnpifw\/cdctest\
 
 ^ ->  (empty)
 ` %s/\^/ `
+
+
+
+先按冒号:
+`%s/hpsyb11/hpsyb04/g`
